@@ -1,9 +1,12 @@
 const express = require('express');
 
 const app = express();
-require('dotenv').config;
+app.use(express.json())
 
-const port = 3000 || process.env.port
+require('dotenv').config();
+const dbConnect = require('./dbConnect');
+
+const port = 3001 || process.env.port
 app.listen(port, () => {
     console.log(`backend server running on port ${port}`)
 })
