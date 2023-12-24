@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* override  ántd styling */
+input {
+  border-radius: none;
+  border: 1px solid gray;
+  height: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid gray !important;
+}
+
+input:hover {
+  outline: none;
+  border: 1px solid gray !important;
+}
+
+label {
+  font-size: 16px;
+}
+
+/* common styles */
+.card {
+  box-shadow: 0 0 2px gray;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 1rem;
+}
+
+.register {
+  width: 420px;
+}
+
+.register-btn {
+  background-color: darkslategrey;
+  height: 40px;
+  width: 100%;
+  color: '#ffc';
+  font-size: 17px;
+}
+/* auth pages*/
+.auth {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
